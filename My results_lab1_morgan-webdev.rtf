@@ -1,0 +1,441 @@
+{\rtf1\ansi\ansicpg1252\cocoartf1671\cocoasubrtf100
+{\fonttbl\f0\fswiss\fcharset0 Helvetica;}
+{\colortbl;\red255\green255\blue255;}
+{\*\expandedcolortbl;;}
+\margl1440\margr1440\vieww10800\viewh8400\viewkind0
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+
+\f0\fs24 \cf0 Auroiah Morgan Results Lab 1:\
+\
+INTRO.htm\
+\
+<!DOCTYPE HTML>\
+<html lang="en">\
+<head>\
+<meta charset="utf-8">\
+<title>Introduction to HTML</title>\
+<link href="_css/styles.css" rel="stylesheet" type="text/css">\
+</head>\
+<body>\
+<h2>HTML Essential Training\
+    Introduction to HTML</h2>\
+<ul>\
+  <li><a href="intro.htm" title="Introduction to HTML">Introduction to HTML</a></li>\
+  <li><a href="syntax.htm" title="HTML syntax">HTML syntax</a></li>\
+  <li><a href="links.htm" title="Creating links">Creating links</a></li>\
+  <li><a href="reference.htm" title="HTML Reference">HTML reference</a></li>\
+  <li><a href="next.htm" title="Next steps">Next steps</a></li>\
+</ul>\
+    <img src="_images/tags.png" alt="HTML" width="310" height="375" class="flowRight"><p>HTML, or <b>Hypertext Markup Language</b>, is the language used to describe the structure of content on the web. As with other markup languages, it uses tags to identify page elements and describe the page&rsquo;s semantic structure. An easy way to visualize this is to consider the various types of documents you see on a day-to-day basis, like magazine and newspaper articles or documents created in a program like Microsoft Word. The formatting of those documents ensures that the information is presented clearly, with a distinct hierarchy. This allows readers to quickly scan the page and determine which information is important and how the content relates to each other. HTML allows us to do that for web pages by first establishing the overall document structure, and then formatting elements like headings and paragraphs.</p>\
+\
+    <h3>History</h3>\
+\
+    <p>HTML can trace its roots back to 1989 at <b>CERN</b>, the European Laboratory for Particle Physics. There, Tim Berners-Lee came up with the idea of having scientists from around the world collaborate on research. His idea was rather than simply making documents available on a server as many people were doing at the time, the documents themselves should be able to link to one another, in a way that would enhance collaboration and make information easier to find and more accessible. From this idea Tim created HTML (based off SGML, an earlier markup language) to format pages and HTTP (or Hypertext Transfer Protocol) to transfer them from one computer to another. Although the world didn&rsquo;t quite realize it yet, the World Wide Web was born.</p>\
+\
+    <p>As the popularity of the web increased in the early 90s, HTML underwent a series of rapid changes. Browser manufacturers like Netscape and Microsoft started to develop their own proprietary tags, and development bodies like the IETF (the Internet Engineering Task Force) and the W3C (the World Wide Web Consortium) were finding it difficult to gain traction with the standardization process of HTML. By 1995, the W3C created an editorial review board for HTML that included members of the W3C as well as representatives from browser developers and other organizations. This collaborative board had a major impact in stabilizing the HTML standard and reducing the uneven implementations that had plagued earlier browsers.</p>\
+\
+    <p>This resulted in the HTML 4.0 specification being released in 1998. It was the most stable version of HTML up to that point, and formalized many of the improvements made to HTML over the years. It&rsquo;s still the most widely used version of HTML and remains the baseline for authors and implementers alike.</p>\
+\
+    <p>Around the time that HTML 4.0 was published, a movement began to evolve HTML towards a more flexible style of markup language. Although authors had tried to anticipate the tags necessary to markup documents, the spread of the World Wide Web and the diversity of user agents made keeping up with requirements difficult. In the eyes of many, migrating to a markup language like XML, which allows authors to create their own tags to represent content, would alleviate those concerns and allow HTML to evolve organically. XML also contains stricter formatting rules than HTML, and a sizable number of authors and developers found HTML&rsquo;s lax parsing rules problematic. This effort resulted in the publishing of the XHTML 1.0 specification in 2000. Although it was not a dramatic departure from HTML 4.0, it did introduce new syntax rules to conform to XML requirements and eliminated the HTML elements that were seen to be dictating the presentation of content rather than the structure of it.</p>\
+\
+    <img src="_images/200px-W3c_icon.png" alt="W3C logo" width="200" height="136" class="flowLeft"><p>Shortly after the 1.0 specification was published, work began on XHTML 2.0, which was to move HTML further towards XML. XHTML 2.0 was a dramatic departure from previous versions of HTML and was never able to gain any traction among browser developers. The specification languished for years in the W3C before its charter was revoked in 2009, essentially ending development.</p>\
+\
+    <p>While the W3C was taking HTML down the XHTML path, a group of authors, developers, and organizations became frustrated with the lack of progress on updating HTML. This group decided to evolve HTML independently of the W3C and formed the Web Hypertext Application Technology Working Group (or <b>WHATWG</b>) in 2004. They began work on the Web Applications 1.0 standard, which extended HTML 4.0, adding clear parsing rules for user agents and creating APIs to make developing web applications easier. The W3C, realizing that XHTML 2.0 faced significant hurdles in adoption, began working with the WHATWG and began to jointly develop the new standard with them in 2008. Currently the W3C works on publishing a stable version of the specification, while the WHATWG continues to work on what they call a &ldquo;living standard&rdquo; of the specification. As a living standard, they&rsquo;ve removed the version number and simply refer to it as &ldquo;HTML.&rdquo;</p>\
+\
+    <h3>HTML timeline</h3>\
+\
+<ol>\
+  <li><b>1991</b>: Tim Berners-Lee publishes &ldquo;HTML Tags&rdquo; which describes the initial 18 elements of HTML</li>\
+  <li><b>1992</b>: NCSA develops the Mosaic browser, which will eventually evolve into Netscape</li>\
+  <li><b>1994</b>: The Internet Engineering Task Force (IETF) creates an HTML working group to develop HTML specifications. Later that year the W3C was created to foster an open standards environment</li>\
+  <li><b>1995</b>: HTML 2.0 specification is published</li>\
+  <li><b>1995</b>: Microsoft releases Internet Explorer to compete with Netscape</li>\
+  <li><b>1997</b>: HTML 3.2 specification is published</li>\
+  <li><b>1997</b>: HTML 4.0 specification is published</li>\
+  <li><b>2000</b>: XHTML 1.0 is published as a W3C recommendation</li>\
+  <li><b>2004</b>: The WHATWG forms to continue work on HTML</li>\
+  <li><b>2006</b>: W3C announces it will work with the WHATWG on HTML5</li>\
+  <li><b>2009</b>: XHTML Working Group charter expires</li>\
+  <li><b>2012</b>: W3C and WHATWG announce they will develop the HTML5 standard separately</li>\
+</ol>\
+<p>&copy; lynda.com | follow me and lynda.com on Twitter! @jameswillweb @lyndadotcom</p>\
+</body>\
+</html>\
+\
+\
+Links.htm\
+\
+<!DOCTYPE HTML>\
+<html lang="en">\
+<head>\
+<meta charset="utf-8">\
+<title>Creating Links</title>\
+<link href="_css/styles.css" rel="stylesheet" type="text/css">\
+</head>\
+<body>\
+    <h2>HTML Essential Training Creating Links</h2>\
+<ul>\
+  <li><a href="intro.htm" title="Introduction to HTML">Introduction to HTML</a></li>\
+  <li><a href="syntax.htm" title="HTML syntax">HTML syntax</a></li>\
+  <li><a href="links.htm" title="Creating links">Creating links</a></li>\
+  <li><a href="reference.htm" title="HTML Reference">HTML reference</a></li>\
+  <li><a href="next.htm" title="Next steps">Next steps</a></li>\
+</ul>\
+<p>Perhaps the most important aspect of HTML is the ability to link from one document to another. This is the basic concept underlying   the web and without this functionality the World Wide Web would not exist. </p>\
+    <h3>Link syntax</h3>\
+<p>Creating links is relatively straightforward, and the syntax provides a lot of flexibility in where and how links are applied. To create a link, you&rsquo;ll use the anchor element (&lt;a&gt;) to wrap the content you wish to convert to a link.&nbsp; Attributes inside the anchor tag tell the browser where the page is linking to, or point to an external resource that the browser should download.<br>\
+  Take the following link example:</p>\
+<pre>&lt;a href=&rdquo;syntax.htm&rdquo; title=&rdquo;learn more about syntax&rdquo;&gt;HTML syntax&lt;/a&gt;</pre>\
+<p>Here the text &ldquo;HTML syntax&rdquo; would now appear as a clickable link. The <b>href</b> attribute tells the browser how to <em>resolve</em> the link; that is where the user should be directed when the link is clicked. The optional <b>title</b> attribute provides a description of the link and is helpful in making the link more accessible.</p>\
+    <h1>Link types</h1>\
+<p>There are three basic types of link: <b>absolute</b>, <b>site-root relative</b>, and <b>document relative</b>. Each of these types refers to the value of the <b>href</b> attribute, which directs how the browser should resolve a link once the link has been clicked. </p>\
+    <h3>Absolute links</h3>\
+<p>These links contain the entire URL necessary to resolve a link, including the protocol. This is usually done for external links, which are links to pages outside of the current site. Here&rsquo;s an example of an absolute link:</p>\
+<pre>&lt;a href=&rdquo;http://www.lynda.com&rdquo; title=&rdquo;You can learn it at lynda.com!&rdquo;&gt;lynda.com&lt;/a&gt;</pre>\
+    <h3>Document relative links</h3>\
+<p>These links are commonly used to navigate internally within a site. For example, if you were on the home page of your site, and wanted to navigate to the contact page, you simply provide the path from the home page to the contact page for the <b>href</b> value. Doing this requires you to understand the directory structure of your site, and when you need to navigate into, or out of, folders. Take the following example:</p>\
+<pre>&lt;a href=&rdquo;contact.htm&rdquo; title=&rdquo;our contact page&rdquo;&gt;Contact us&lt;/a&gt;</pre>\
+<p>This link assumes that the contact page and the current page are in the same directory. If the contact page were located in a directory below the current page, the link would look like this:</p>\
+<pre>&lt;a href=&rdquo;resources/contact.htm&rdquo; title=&rdquo;our contact page&rdquo;&gt;Contact us&lt;/a&gt;</pre>\
+<p>This assumes the contact page is in a directory titled &ldquo;resources&rdquo; and is one level below the current page. To move <b>out</b> of a directory, you precede the page with the &ldquo;../&rdquo; characters. In this case of our contact link it would look like this:</p>\
+<pre>&lt;a href=&rdquo;../contact.htm&rdquo; title=&rdquo;our contact page&rdquo;&gt;Contact us&lt;/a&gt;</pre>\
+<p> This link would move up from the current directory and find the contact.htm page in the parent directory. You can use as many of these &ldquo;../&rdquo; as you need to move up and properly resolve the link.</p>\
+    <h3>Site-Root Relative Links</h3>\
+<p> These are similar to document relative links, but start at the root folder for the site and then move down through directories to the desired page. Unlike document relative links, which depend on the current location of the page to properly resolve links, site-root relative links are written the same no matter the current location within your site. All links are preceded by a forward slash (/) that refers to the root directory. Here&rsquo;s an example:</p>\
+<pre>&lt;a href=&rdquo;/contact.htm&rdquo; title=&rdquo;our contact page&rdquo;&gt;Contact us&lt;/a&gt;</pre>\
+<p> In this example, the link is resolved by going directly into the site&rsquo;s root folder and finding the contact page. If the contact page were located deeper within the site, the link would look like this:</p>\
+<pre>&lt;a href=&rdquo;/resources/contact.htm&rdquo; title=&rdquo;our contact page&rdquo;&gt;Contact us&lt;/a&gt;</pre>\
+    <h1>Fragment identifiers</h1>\
+<p>Occasionally you&rsquo;ll want a link to refer to a specific location within a page. This can be done using a special kind of link called a fragment identifier. These links point to elements with a specific <b>ID</b> attribute. Let&rsquo;s say, for example, you have a long list of <b>FAQs</b> on a page organized by categories and you had a heading at the top of each category. If you assigned each heading an ID attribute, you could use those IDs to create a links that jump to specific categories. For example, you could format the Camping FAQs heading like this:</p>\
+<pre>&lt;h2 id=&rdquo;camp&rdquo;&gt;Camping&lt;/h2&gt;</pre>\
+<p> Elsewhere on the page you could link to this section by creating the following link:</p>\
+<pre>&lt;a href=&rdquo;#camp&rdquo;&gt;Learn more about camping&lt;/a&gt;</pre>\
+<p> Note the hash symbol (#) prior to the ID value. This tells the browser to look for an element with the ID value that follows.You can link to fragment identifiers on external pages as well. Simply append the fragment identifier to the URL and the link will jump to not only to that page, but that specific section as well.</p>\
+<pre>&lt;a href=&rdquo;faq.htm#camp&rdquo;&gt;Read our FAQ on camping.&lt;/a&gt;</pre>\
+<p>&copy; lynda.com | follow me and lynda.com on Twitter! @jameswillweb @lyndadotcom</p>\
+</body>\
+</html>\
+\
+\
+Next.htm\
+\
+<!DOCTYPE HTML>\
+<html lang="en">\
+<head>\
+<meta charset="utf-8">\
+<title>Next Steps</title>\
+<link href="_css/styles.css" rel="stylesheet" type="text/css">\
+</head>\
+<body>\
+    <h2>HTML Essential Training Next Steps</h2>\
+<ul>\
+  <li><a href="intro.htm" title="Introduction to HTML">Introduction to HTML</a></li>\
+  <li><a href="syntax.htm" title="HTML syntax">HTML syntax</a></li>\
+  <li><a href="links.htm" title="Creating links">Creating links</a></li>\
+  <li><a href="reference.htm" title="HTML Reference">HTML reference</a></li>\
+  <li><a href="next.htm" title="Next steps">Next steps</a></li>\
+</ul>\
+<p>Once you master the basics of authoring HTML, you&rsquo;ll need focus on what your next steps will be. If you&rsquo;re an aspiring web designer, you&rsquo;ll need to dive deeper into HTML, CSS, and JavaScript. If you&rsquo;re maintaining a corporate or personal site through a CMS, you&rsquo;ll need to focus on how the CMS works, and the most efficient ways to edit and maintain content. On this page I&rsquo;ll give you some basic advice on how to approach learning web design and point you towards additional resources that can help you along the way.</p>\
+    <h1>Learning Web Design</h1>\
+<p>&ldquo;Web design&rdquo; is a pretty open-ended term. Often people who are new to web design feel overwhelmed at everything there is to learn. That&rsquo;s understandable, but just remember that it&rsquo;s like any other discipline; with proper dedication and focus you&rsquo;ll progress quickly. Here&rsquo;s my favorite advice to new web designers on learning web design:</p>\
+    <p><b>Learn how the web works.</b><br>\
+        I&rsquo;m always amazed at how many web designers focus on learning &ldquo;just what they need to know&rdquo; and ignore how the web actually works. Without understanding how web servers, protocols, browsers, and other related web technology works, you&rsquo;ll never really understand the context behind why you do the things you do, and what makes one practice better than another.</p>\
+    <p><b>Determine an area of focus, and start there.</b><br>\
+  There are a lot of areas of web design that you could specialize in, so I&rsquo;d recommend learning as much about them as you can, to determine which areas interest you. Then, spend as much time learning about your specific area of focus as possible. Once you achieve a level of proficiency, begin to branch out into other areas as well. </p>\
+    <p><b>Never stop learning</b><br>\
+        The web is constantly evolving. Even if you become the absolute best there is in a specific field, chances are new techniques and approaches will come along within the year that will make your current skill set less desirable. Understand that being a good web designer means embracing the changing nature of the web.</p>\
+    <p><b>Break things!</b><br>\
+        There is no better teacher than experience. Build and experiment constantly. Ask yourself, <i>&ldquo;what would happen if I?...&rdquo;</i> or <i>&ldquo;wonder if I could build?...&rdquo;</i> and then go out and build it. If you&rsquo;re like me, you&rsquo;ll fail a good bit of the time, but the process of trying things and breaking them will make you that much better. <p><em>Always challenge yourself.</em></p>\
+<h3>Web Design Resources</h3>\
+    <p><b>lynda.com online training library</b> </p>\
+    <p><b>HTML related titles</b></p>\
+    <p><b>Web Design related titles</b></p>\
+    <p><b>HTML specifications</b> </p>\
+<p>Although their format can be a bit hard to read initially, once you&rsquo;re familiar with them there is no better resource for learning HTML and staying current with it than reading the actual W3C specifications.</p>\
+    <p><b>HTML 4.0</b></p>\
+<p><b>XHTML 1.0</b></p>\
+<p><b>WHATWG HTML5</b></p>\
+<p><b>W3C HTML5</b></p>\
+<p><b>W3C Markup Validation Service </b></p>\
+<p>Great for testing code and making sure you&rsquo;re writing valid HTML syntax.</p>\
+<p><b>Mozilla Developer Network </b></p>\
+<p>One of the best online resources for web designers and developers. Great collection of articles, tutorials, and references.</p>\
+<p><b>HTML5 Rocks </b></p>\
+<p>Once you&rsquo;ve got the basics down, check out sites like HTML5 Rocks. This site feature articles, tutorials, and other resources that help you keep up with the evolving web. </p>\
+<p>&copy; lynda.com | follow me and lynda.com on Twitter! @jameswillweb @lyndadotcom</p>\
+</body>\
+</html>\
+\
+\
+Reference.htm\
+\
+<!DOCTYPE HTML>\
+<html lang="en">\
+<head>\
+<meta charset="utf-8">\
+<title>HTML Reference</title>\
+<link href="_css/styles.css" rel="stylesheet" type="text/css">\
+</head>\
+<body>\
+    <h2>HTML Essential Training\
+    HTML Reference</h2>\
+<ul>\
+  <li><a href="intro.htm" title="Introduction to HTML">Introduction to HTML</a></li>\
+  <li><a href="syntax.htm" title="HTML syntax">HTML syntax</a></li>\
+  <li><a href="links.htm" title="Creating links">Creating links</a></li>\
+  <li><a href="reference.htm" title="HTML Reference">HTML reference</a></li>\
+  <li><a href="next.htm" title="Next steps">Next steps</a></li>\
+</ul>\
+<p>On this page you&rsquo;ll find a quick reference to common HTML terms and a table of frequently used <a href="#named">named character entities</a>.</p>\
+    <h3>HTML Terms</h3>\
+<dl>\
+  <dt>Attribute</dt>\
+  <dd> An HTML element property that provides additional information or functionality for an element. Attributes appear as a name/value pair with the value contained in quotation marks. </dd>\
+  <dt>Block-Level Element</dt>\
+  <dd>HTML tags that create blocks of content within the document such as headings and paragraphs. Block-level elements typically stack one on top of each other based on the order they appear in the code. </dd>\
+  <dt>Child Element </dt>\
+  <dd>Any HTML element that is contained inside another HTML element. Child element tags must close before their parent element tags. </dd>\
+  <dt>Closing Tag </dt>\
+  <dd>Appears after an element&rsquo;s content and indicates the end of an element. Is identical to an element&rsquo;s opening tag with the addition of a forward slash (/) prior to the tag&rsquo;s character. </dd>\
+  <dt>Comment </dt>\
+  <dd>Reference information added to the code. May include an overview of more complex code, a reminder for future authors, or communications within a team. </dd>\
+  <dt>CMS </dt>\
+  <dd>CMS is short for <b>Content Management System</b>, and refers to any system designed to allow users to create and maintain content. For the web, it primarily refers to software designed to manage web sites and their content. Examples include Joomla! and WordPress.</dd>\
+  <dt>CSS </dt>\
+  <dd>Cascading Style Sheets (CSS)is a presentation language used to control the presentation and layout of web pages. </dd>\
+  <dt>Doctype </dt>\
+  <dd>Short for <b>Document Type Declaration</b>. Appears at the top of all HTML documents to trigger standards mode and identifies the version of HTML used by the document. </dd>\
+  <dt>DOM </dt>\
+  <dd>The DOM, or <b>Document Object Model</b>, is a representation of documents like HTML. The DOM can be thought of as an outline where tags are represented by &ldquo;nodes.&rdquo; Scripting languages like JavaScript reference the DOM when accessing or modifying page content. </dd>\
+  <dt>Elements </dt>\
+  <dd>HTML elements consist of an HTML tag, used to identify the content, and the content itself. Is often used interchangeably with the term &quot;tags&quot; although technically tags only refer to the tag itself. </dd>\
+  <dt>FTP </dt>\
+  <dd>FTP stands for <b>File Transfer Protocol</b>. It&rsquo;s a common protocol used for transferring large files from one server to another. </dd>\
+  <dt>HTTP </dt>\
+  <dd>HTTP, or <b>Hypertext Transfer Protocol</b>, controls the formatting and transmission of HTML pages across web servers. </dd>\
+  <dt>Inline-Level Elements </dt>\
+  <dd>Elements that appear within the normal flow of text. Unlike block-level elements, inline-level elements do not start new lines within the normal document flow. </dd>\
+  <dt>JavaScript </dt>\
+  <dd>Scripting language developed by Netscape and used to control much of the functionality and behavior on the web. </dd>\
+  <dt>Metadata </dt>\
+  <dd>Additional information about the document or document content, typically stored in meta tags. </dd>\
+  <dt>MIME Type </dt>\
+  <dd>Short for <b>Multipurpose Internet Mail Extension,</b> MIME types are used to tell user agents what type of program a file or extension is. Without a proper MIME type, user agents can have trouble properly running applications or processing files. </dd>\
+  <dt>Parent Element </dt>\
+  <dd>An HTML element that contains another element. It is possible for an element to be a child of one element and the parent of another. </dd>\
+  <dt>Replaced Element </dt>\
+  <dd>Any HTML element where the contents of the element are replaced by something else. Examples would be images, video, or other plug-in content. </dd>\
+  <dt>Tag </dt>\
+  <dd>Markup characters that indicate what type of content appear on the page. Most tags consist of both an opening and closing tag. </dd>\
+  <dt>URL </dt>\
+  <dd>URL stands for <b>Uniform Resource Locator</b>. It serves as the address of a document or other resource on the web. </dd>\
+  <dt>W3C </dt>\
+  <dd>The W3C, or <b>World Wide Web Consortium</b>, is the standards body responsible for authoring the HTML specification. </dd>\
+</dl>\
+<table border="1" cellspacing="0" cellpadding="0" summary="A quick reference of named character entities, including an example of the character, a description, and the entity code.">\
+  <caption>\
+      <h1>Common Named Character Entities</h1> \
+  </caption>\
+  <tr>\
+    <th scope="col">Character </th>\
+    <th scope="col">Description </th>\
+    <th scope="col">Entity </th>\
+  </tr>\
+  <tr>\
+    <td class="center"> &quot;</td>\
+    <td>double quotation mark</td>\
+    <td><b>&amp;quot;</b></td>\
+  </tr>\
+  <tr>\
+    <td class="center">&amp;</td>\
+    <td>ampersand</td>\
+    <td><b>&amp;amp;</b></td>\
+  </tr>\
+  <tr>\
+    <td class="center">&lang;</td>\
+    <td>left-angle bracket</td>\
+    <td><b>&amp;lang;</b></td>\
+  </tr>\
+  <tr>\
+    <td class="center">&rang;</td>\
+    <td>right-angle bracket</td>\
+    <td><b>&amp;rang;</b></td>\
+  </tr>\
+  <tr>\
+    <td class="center">&lt;</td>\
+    <td>less than symbol</td>\
+    <td><b>&amp;lt;</b></td>\
+  </tr>\
+  <tr>\
+    <td class="center">&gt;</td>\
+    <td>greater than symbol</td>\
+    <td><b>&amp;gt;</b></td>\
+  </tr>\
+  <tr>\
+    <td class="center">&nbsp;</td>\
+    <td>non-breaking white space</td>\
+    <td><b>&amp;nbsp;</b></td>\
+  </tr>\
+  <tr>\
+    <td class="center">&apos;</td>\
+    <td>apostrophe</td>\
+    <td><b>&amp;apos;</b></td>\
+  </tr>\
+  <tr>\
+    <td class="center">&ldquo;</td>\
+    <td>left double quote</td>\
+    <td><b>&amp;ldquo;</b></td>\
+  </tr>\
+  <tr>\
+    <td class="center">&rdquo;</td>\
+    <td>right double quote</td>\
+    <td><b>&amp;rdquo;</b></td>\
+  </tr>\
+  <tr>\
+    <td class="center">&laquo;</td>\
+    <td>left-pointing double angle quotation mark</td>\
+    <td><b>&amp;laquo;</b></td>\
+  </tr>\
+  <tr>\
+    <td class="center">&reg;</td>\
+    <td>registered sign</td>\
+    <td><b>&amp;reg;</b></td>\
+  </tr>\
+  <tr>\
+    <td class="center">&copy;</td>\
+    <td>copyright symbol</td>\
+    <td><b>&amp;copy;</b></td>\
+  </tr>\
+  <tr>\
+    <td class="center">&trade;</td>\
+    <td>trademark symbol</td>\
+    <td><b>&amp;trade;</b></td>\
+  </tr>\
+  <tr>\
+    <td class="center">&frasl;</td>\
+    <td>fraction slash</td>\
+    <td><b>&amp;frasl;</b></td>\
+  </tr>\
+  <tr>\
+    <td class="center">&ndash;</td>\
+    <td>en dash</td>\
+    <td><b>&amp;ndash;</b></td>\
+  </tr>\
+  <tr>\
+    <td class="center">&mdash;</td>\
+    <td>em dash</td>\
+    <td><b>&amp;mdash;</b></td>\
+  </tr>\
+</table>\
+<p>&copy; lynda.com | follow me and lynda.com on Twitter! @jameswillweb @lyndadotcom</p>\
+</body>\
+</html>\
+\
+\
+Structure.htm\
+\
+<!DOCTYPE HTML>\
+<html lang="en">\
+<head>\
+<meta charset="utf-8">\
+<title>Introduction to HTML</title>\
+<link href="_css/styles.css" rel="stylesheet" type="text/css">\
+</head>\
+<body>\
+    <h2>HTML Essential Training\
+        Structuring Pages</h2>\
+<ul>\
+  <li><a href="intro.htm" title="Introduction to HTML">Introduction to HTML</a></li>\
+  <li><a href="syntax.htm" title="HTML syntax">HTML syntax</a></li>\
+  <li><a href="structure.htm" title="Structuring pages">Structuring pages</a></li>\
+  <li><a href="links.htm" title="Creating links">Creating links</a></li>\
+  <li><a href="reference.htm" title="HTML Reference">HTML reference</a></li>\
+  <li><a href="next.htm" title="Next steps">Next steps</a></li>\
+</ul>\
+    <h3>Conveying meaning through structure</h3> \
+<p>Creating properly structured pages is the foundation of any good website. A solid semantic structure allows you to convey meaning and properly represent content types through nothing more than the page's markup. This, in turn, makes your content more accessible, easier to index and search, and makes it easier to repurpose. Remember that there are a lot of different devices, robots, and other user agents that will be reading your code. <em>Without a consistent, semantic structure your site will be less effective.</em> </p>\
+    <h3>Sectioning elements</h3>\
+<p>One way to add meaning to your content is to organize them into sections that convey meaning and structure. For example it's pretty standard to contain introductory information within a section, page navigation within its own area, the page's main content in its own region, and related information within a sidebar. HTML contains numerous elements that are designed to assist in the logical structuring and semantics of page content. </p>\
+<p>In previous versions of HTML creating new sections of content was done almost exclusively through the use of <b>heading</b> tags, with <b>divs</b> being used to group areas of content together. <b>Class</b> or <b>ID</b> attributes would allow designers to attach more semantic meaning to the groups, although this meant little to most user agents. In HTML5 new sectioning and semantic elements were introduced to help represent commonly used sections and create more consistent page structures. Tags like the <b>aside</b>, <b>article</b>, <b>footer</b>, <b>header</b>, <b>main</b>, <b>nav</b>, and <b>section</b> allow authors to identify common page regions and convey more semantic meaning. </p>\
+<p>Although some of these elements are very specific, in many cases which element you'll use and how you'll structure them is very much a judgment call. Make sure, however, that your finished structure represents the desired document outline. </p>\
+    <h3>Document outlines</h3> \
+<p>One of the fundamental concepts of HTML is that its documents can be represented by a document outline that summarizes the content of the page. Imagine a page being represented by a table of contents and you'll have a good idea of what one of these outlines might look like. These outlines assist in tasks such as quickly searching documents and making content easier to navigate for assistive devices. </p>\
+<p>Prior to HTML5, document outlines were generated entirely through the use of headings. An H1 at the top of the page would serve to identify the page content, and subsequent headings would create sections and subsections inside of it. This meant that having a strategy for when to use certain headings was critical for maintaining consistent document structure. In HTML5 a new outline algorithm was introduced that added the new sectioning elements to the heading elements and created a more sophisticated outlining model. Although not currently implemented by user agents it is still recommended that authors familiarize themselves with it so that they're using the new sectioning and semantic tags properly. </p>\
+<p>It is still considered to be a best practice to use heading tags to establish the document outline. Mozilla has a fantastic article on sections and outlines in HTML documents that I strongly recommend reading.</p>\
+    <h3>W3C Warning</h3>\
+<p>At the time of the authoring of this course, the W3C had posted this warning regarding the HTML5 outline algorithm:</p>\
+<blockquote>There are currently no known implementations of the outline algorithm in graphical browsers or assistive technology user agents, although the algorithm is implemented in other software such as conformance checkers. Therefore the outline algorithm cannot be relied upon to convey document structure to users. Authors are advised to use heading rank (h1-h6) to convey document structure.</blockquote>\
+    <h3>WAI-ARIA Roles</h3>\
+<p>Carefully structuring an HTML page is the first step into ensuring that the content is accessible to all users. You should also use WAI-ARIA role attributes where appropriate to increase accessibility and improve semantics. WAI-ARIA is short for the Web Accessibility Initiative's Accessible Rich Internet Application specification. The roles attribute attempts to identify content and its capabilities by assigning it to a predefined role. This helps assistive devices understand what the content is, how it relates to other content, and how the content can be interacted with. The W3C has a fantastic resource on how WAI-ARIA works and how it should be used with HTML.</p>\
+<p>&copy; lynda.com | follow me and lynda.com on Twitter! @jameswillweb @lyndadotcom</p>\
+</body>\
+</html>\
+\
+Syntax.htm\
+\
+<!DOCTYPE HTML>\
+<html lang="en">\
+<head>\
+<meta charset="utf-8">\
+<title>HTML Syntax</title>\
+<link href="_css/styles.css" rel="stylesheet" type="text/css">\
+</head>\
+<body>\
+    <!--Edited by: Auroiah Morgan -->\
+    <h2 class="headline">HTML Essential Training HTML Syntax</h2>\
+<ul>\
+  <li><a href="intro.htm" title="Introduction to HTML">Introduction to HTML</a></li>\
+  <li><a href="syntax.htm" title="HTML syntax">HTML syntax</a></li>\
+  <li><a href="links.htm" title="Creating links">Creating links</a></li>\
+  <li><a href="reference.htm" title="HTML Reference">HTML reference</a></li>\
+  <li><a href="next.htm" title="Next steps">Next steps</a></li>\
+</ul>\
+<p>Because HTML is often the people&rsquo;s first experience with coding, there can be a fair amount of apprehension about learning it. Thankfully, HTML syntax is relatively simple and easy to learn. Most people can learn the basics of HTML and begin coding it within the same day.</p>\
+    <h3>A markup language</h3>\
+<p>HTML is a markup language. That means that content on the page is &ldquo;marked up&rdquo; by tags which identify the content inside of them. A paragraph, for example, can be identified by placing the &ldquo;&lt;p&gt;&rdquo; opening tag prior to the paragraphs content and the &ldquo;&lt;/p&gt;&rdquo; closing tag at the end of a paragraph. The full paragraph would look like this:</p>\
+<pre><code>&lt;p&gt;This is a paragraph.&lt;/p&gt;</code></pre>\
+<p>Tags consist of a left-angle bracket (&lt;) followed by a character or characters that identify the tag (the &ldquo;p&rdquo; for paragraph) and a closing right-angle bracket (&gt;). The closing tags for an element are exactly the same as an opening tag, except that a forward slash (/) will precede the tags characters.<br>\
+  Although most elements require an opening and a closing tag, the closing tag is optional for some elements and not required at all for others. While there are exceptions to the rule, for the most part any element that contains content inside the opening and closing tags also requires a closing tag.</p>\
+    <h3>Basic document structure</h3>\
+<p>The core of all HTML documents revolves around three basic tags. First, an html tag (&lt;html&gt;) is required to identify the document as an HTML file. Directly inside the html tag, you&rsquo;ll find the head element (&lt;head&gt;). The head of a document is where you&rsquo;ll find the document&rsquo;s metadata, the document title, and links to external resources such as style sheets and scripts. A good way to think about the document&rsquo;s head is that it doesn&rsquo;t contain any of the page&rsquo;s <em>visual</em> content rather it contains information about the document and the resources that help make the page work. Directly after the document&rsquo;s head, you&rsquo;ll find its body (&lt;body&gt;). The body is where you&rsquo;ll find all of the page&rsquo;s actual content. Headings, paragraphs, images, lists, tables, and other content will be located here. At its most basic, an HTML file would look like this:</p>\
+<pre><code>\
+&lt;html&gt;     \
+     &lt;head&gt;\
+     &lt;/head&gt;\
+     &lt;body&gt;\
+     &lt;/body&gt;\
+&lt;/html&gt;\
+  </code></pre>\
+    <h3>DOCTYPES</h3>\
+<p>If you&rsquo;ve looked at HTML pages before, you&rsquo;ve probably noticed a long, somewhat intimidating tag just before the opening HTML tag. This is a doctype declaration and it&rsquo;s a very important but often misunderstood component of HTML pages. Essentially, it tells the user agent parsing your page which version of HTML (or XHTML) to expect, so that it knows which syntax rules to use when rendering your page. The doctype you use should be based on the version of HTML you&rsquo;re using to author the page. While that all sounds good in theory, in reality most of the time a doctype is simply triggering &ldquo;standards-mode&rdquo; rather than &ldquo;quirks mode&rdquo; (based on older browsers non-standard way of rendering pages). For that reason alone, all HTML documents should be preceded by a doctype declaration. For more information on doctypes, and the history behind them, check out Mark Pilgrim&rsquo;s excellent section on doctypes from his <em>Dive Into HTML5</em> book. Here are some of the more common HTML doctypes:</p>\
+HTML 4.0 transitional\
+<pre><code>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.01 Transitional//EN&quot; &quot;http://www.w3.org/TR/html4/loose.dtd&quot;&gt;</code></pre>\
+XHTML 1.0 Transitional\
+<pre><code>&lt;!DOCTYPE html PUBLIC &quot;-//W3C//DTD XHTML 1.0 Transitional//EN&quot; &quot;http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd&quot;&gt;</code></pre>\
+HTML5\
+<pre><code>&lt;!DOCTYPE HTML&gt;</code>\
+</pre>\
+    <h3>Element attributes</h3>\
+<p>Some elements can be enhanced through the use of attributes. Attributes allow you to provide more information or additional functionality to the content. Attributes are added to the opening tag of an element and consist of two parts, the <strong>name</strong> and <strong>value</strong>. Although the syntax varies based on the version of HTML you&rsquo;re using, it&rsquo;s standard practice to put values within quotation marks.</p>\
+<pre><code>&lt;h1 class=&rdquo;headline&rdquo;&gt;Article&rsquo;s main headline&lt;/h1&gt;</code></pre>\
+    <h3>Replaced elements</h3>\
+<p>Some HTML elements represent content that is replaced by an outside resource such as an image, form control, or a video file. These elements are referred to as <strong>replaced elements</strong> and usually have a predetermined width or height. In some cases the elements will have attributes that tell the browser where to find an external resource like an image or video.</p>\
+<pre><code>&lt;img src=&ldquo;photo.jpg&rdquo; alt=&ldquo;my awesome photo&rdquo;&gt;&nbsp;</code></pre>\
+    <h3>Code structure</h3>\
+<p>HTML documents create structure by nesting elements inside of one another. You might group a section of page content together by wrapping them within a &lt;div&gt; or &lt;section&gt; element, for example. When nesting one tag within another one, you must first close any child elements prior to closing any parent elements. <br>\
+  This syntax, for example, would be <em>incorrect</em>:</p>\
+<pre class="wrong"><code>&lt;p&gt;You must close all nested tags &lt;strong&gt;first!&lt;/p&gt;&lt;/strong&gt;</code></pre>\
+<p>Rather, the correct syntax would be:</p>\
+<pre class="correct"><code>&lt;p&gt;You must close all nested tags &lt;strong&gt;first!&lt;/strong&gt;&lt;/p&gt;</code></pre>\
+<p>HTML also has specific rules about which elements can be nested within other elements. A paragraph (&lt;p&gt;) for example, can&rsquo;t be nested inside a heading (&lt;h1&gt;). &nbsp;For the most part, these rules are based around the type of content the tag represents. HTML 4 has two basic types of content: <strong>block</strong> and <strong>inline</strong>. Block-level elements typically occupy their own line within a document, usually stacking one on top of each other in the order they appear in your code. Inline-level elements can appear within the flow of block level elements. Elements like strong (&lt;strong&gt;), bold (&lt;b&gt;), emphasis (&lt;em&gt;), italic (&lt;i&gt;), and span (&lt;span&gt;) are always found inside block-level elements. <br>\
+  HTML5, on the other hand, expands the concept of content types to seven different categories of content, with some elements belonging to multiple categories. This replaces the concept of block-level and inline-level elements and adds some additional nesting syntax rules. For the most part, the rules around nesting elements make sense and are fairly easy to pick up. You should be prepared, however, for it to take some time before you fully understand all of the rules surrounding nesting elements. One way to making sure to your code is structured properly is to validate your code through a service like the W3C&rsquo;s Markup Validation service.</p>\
+    <h3>Commenting code</h3>\
+<p>Often it is helpful to leave notes to yourself or other developers within your code. Perhaps you want to remind yourself what a certain script does, or remind a co-worker how to properly structure specific content. To do this, you&rsquo;ll use comments. Comments should appear on their own line, and typically appear directly before or after the code they refer to. Comments begin with a left-angle bracket, an exclamation point, and two hyphens (&lt;!--) and end with two hyphens followed by a right-angle bracket (--&gt;).</p>\
+Comment syntax:\
+<pre><code>&lt;!-- This is a comment --&gt;</code></pre>\
+    <h3>Using special characters</h3>\
+<p>Certain characters are reserved in HTML, meaning that you shouldn&rsquo;t use them outside of their specific purpose. The angle brackets, for example, are reserved for tags, and using them anywhere outside of a tag could cause parsing errors in browsers. However, you can still use these reserved characters and other special characters or symbols by using what is known as a <strong>named character entity</strong>. These special codes tell the user agent to replace the entity code with a specific character. These entities begin with an ampersand (&amp;) followed by the entity name and end with a semicolon (;). To display an ampersand, for example, you would type <strong>&amp;amp;</strong> in place of the actual ampersand. You can find named character entity lists within the HTML specifications, although the format for them can be a bit hard to read. You can also find a useful list of character entities on the <a href="reference.htm#named">HTML Reference</a> page, and a more comprehensive list on Wikipedia.</p>\
+<p>&copy; lynda.com | follow me and lynda.com on Twitter! @jameswillweb @lyndadotcom</p>\
+</body>\
+</html>\
+}
